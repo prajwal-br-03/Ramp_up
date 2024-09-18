@@ -8,3 +8,16 @@
   - Overloading a function
   - recursive function
   - Inline function
+  - Virtual function 
+
+2) CLASSES AND OBJECTS
+  - Creating a class 
+  - Access Modifiers
+  - Friend class
+  - Constructor
+  - Destructor
+  - Copy Constructor
+  - shallow copy and deep copy of class 
+  - Static data members
+  - Nested classes 
+
