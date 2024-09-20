@@ -1,0 +1,8 @@
+----------------------------------TOPICS------------------------------------
+-Variables
+-Datatypes
+-ownership concept, borrowing 
+-struct type
+-enum type
+-functions creation
+
