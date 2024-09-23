@@ -25,11 +25,14 @@ impl Books {
     }
 }
 
-/*fn check_id(check:&vec<Books>,id:i32) -> bool {
+fn check_id(check:&Vec<Books>,id:i32) -> bool {
     for bood in check{
-        bood.id == id 
+        if bood.id == id {
+            return true;
+        }
     }
-}*/
+    false
+}
 fn main() {
     let mut Book = vec![Books{id:13,title:String::from("Pride and prejudice"),author:String::from("jane austen"),quantity:12}];
     let mut cont:bool = true;
@@ -48,11 +51,10 @@ fn main() {
         let mut b = String::new();
         io::stdin().read_line(&mut b).unwrap();
         let ids:i32 = b.trim().parse().unwrap();
-        /*if check_id(&Book,ids) {
+        if check_id(&Book,ids) {
+            println!("Book already exists");
             continue;
-        }else{
-            break;
-        }*/
+        }
         println!("Enter the title of the book");
         let mut lin = String::new();
         let titles = std::io::stdin().read_line(&mut lin).unwrap();
