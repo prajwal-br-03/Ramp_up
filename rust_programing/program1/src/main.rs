@@ -91,6 +91,8 @@ fn main() {
                 bo.update_book_quantity(upquan);
 
 
+            }else {
+                println!("Invalid book id");
             }
         }
 
