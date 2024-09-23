@@ -1,8 +1,17 @@
 ----------------------------------TOPICS------------------------------------
 -Variables
 -Datatypes
--ownership concept, borrowing 
+-ownership concept, borrowing --& is used to pass reference.
+- clone --copy values of the same in the heap also and stack also.
 -struct type
 -enum type
 -functions creation
+-Collections--
+  --vector --
+  --hashmap
+  --hashset
+  --vecdeque
+  --linkedlist
+--Traits
+  --common functions for different datas its like same behaviour common with classes
 
