@@ -24,6 +24,12 @@ impl Books {
         self.quantity = new_quant;
     }
 }
+
+/*fn check_id(check:&vec<Books>,id:i32) -> bool {
+    for bood in check{
+        bood.id == id 
+    }
+}*/
 fn main() {
     let mut Book = vec![Books{id:13,title:String::from("Pride and prejudice"),author:String::from("jane austen"),quantity:12}];
     let mut cont:bool = true;
@@ -42,6 +48,11 @@ fn main() {
         let mut b = String::new();
         io::stdin().read_line(&mut b).unwrap();
         let ids:i32 = b.trim().parse().unwrap();
+        /*if check_id(&Book,ids) {
+            continue;
+        }else{
+            break;
+        }*/
         println!("Enter the title of the book");
         let mut lin = String::new();
         let titles = std::io::stdin().read_line(&mut lin).unwrap();
@@ -53,7 +64,11 @@ fn main() {
         io::stdin().read_line(&mut c).unwrap();
         let quant:i32 = c.trim().parse().unwrap();
         Book.push(Books::new(ids,lin,lins,quant));
-    }
+            }
+            
+        
+        
+    
     else if a == 2{
         for boo in Book.iter(){
             boo.show_books();
